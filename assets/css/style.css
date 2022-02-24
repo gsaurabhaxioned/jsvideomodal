@@ -177,7 +177,7 @@ header img {
 }
 
 .menus ul li:first-child {
-  margin-left: 4.3%;
+  margin-left: 4.5%;
 }
 
 .menus ul li:first-child a {
@@ -185,8 +185,8 @@ header img {
 }
 
 .menus ul li:nth-child(2) {
-  margin-left: 3.5%;
-  flex-basis: 14%;
+  margin-left: 3.6%;
+  flex-basis: 15%;
 }
 
 
@@ -195,40 +195,25 @@ header img {
 }
 
  .menus ul li:nth-child(4) {
-  margin-left: 0.1%;
   flex-basis: 11%;
 }
 
- .menus ul li:nth-child(5) {
-  margin-left: 1.4%;
-} 
-
- .menus ul li:nth-child(6) {
-  background: #794F73;
-  flex-basis: 17.4%;
-  text-align: center;
-  margin-right: 0;
-} 
-
- .menus ul li:nth-child(7) {
-  background: gray;
-  flex-basis: 5.4%;
-  text-align: center;
-} 
 
 .action-buttons {
+  margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .action-buttons li:nth-child(1) {
-  text-align: center;
+  padding: 45px 51px;
   background: #794F73;
-  padding: 46px 53px;
+  text-align: center;
 }
 
 .action-buttons li:nth-child(2) {
   background: #526069;
-  padding: 46px 10px;
+  padding: 46px 7px;
 }
 
 .action-buttons li a {
@@ -245,14 +230,11 @@ header img {
 .action-buttons li:nth-child(2) a {
   padding: 1px 19px;
   font-size: 15px;
+  text-indent: -9999px;
 }
 
 .action-buttons li a:hover {
   color: #ffa500;
-}
-
-.search {
-  text-indent: -9999px;
 }
 
 .search::before {
@@ -292,7 +274,7 @@ header img {
 
 .liber-institute {
   width: 100%;
-  padding: 35px 0;
+  padding: 30px 0 40px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -305,26 +287,26 @@ header img {
 }
 
 .liber-institute h2 {
-  width: 33%;
+  width: 40%;
   margin: auto;
-  font-size: 42px;
-  line-height: 59px;
+  font-size: 50px;
+  line-height: 65px;
   letter-spacing: 1px;
 }
 
 .liber-institute p {
   margin-top: 7px;
-  font-size: 26px;
+  font-size: 27px;
+  letter-spacing: 1px;
 }
 
 .liber-institute a {
   padding: 20px 104px;
-  margin-top: 25px;
+  margin-top: 29px;
   border: 5px solid #fff;
   border-radius: 36px;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
   box-sizing: border-box;
   transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
@@ -420,7 +402,7 @@ header img {
   float: right;
   color: #ff0000;
   font-family: "fontAwesome";
-  font-size: 58px;
+  font-size: 30px;
   text-indent: 0;
   cursor: pointer;
 }
@@ -436,7 +418,7 @@ header img {
 }
 
 .content {
-  padding: 104px 59px 105px;
+  padding: 107px 59px 105px;
   position: relative;
   flex-basis: 31.7%;
   background: #794F73;
@@ -552,6 +534,18 @@ header img {
 
 .content:nth-child(4) {
   background-color: #E31E53;
+}
+
+.content:nth-child(2) {
+  padding-top: 87px;
+}
+
+.content:nth-child(3) {
+  padding-top: 71px;
+}
+
+.content:nth-child(4) {
+  padding-top: 83px;
 }
 
 
