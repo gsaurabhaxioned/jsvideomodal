@@ -786,6 +786,7 @@ header img {
 
   .menus {
     padding: 20px;
+    display: none;
     background-color: #794F73;
   }
 
@@ -800,6 +801,12 @@ header img {
  .menus ul li a:hover {
    color: #fff;
  }
+
+ .hamburger {
+   margin-left: 20px;
+  align-self: flex-start;
+  display: block;
+}
 
  .banner figure {
    height: 412px;
@@ -830,6 +837,10 @@ header img {
   .brain-text a {
     margin-top: 32px;
     padding: 9px 25px;
+  }
+
+  .brain-background-image {
+    height: 371px;
   }
 
 
