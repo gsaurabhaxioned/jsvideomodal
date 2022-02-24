@@ -319,6 +319,23 @@ header img {
   color: #ffa500;
 }
 
+.liber-institute a::after {
+  content: "\f18e";
+  margin-left: 13px;
+  vertical-align: middle;
+  font-size: 23px;
+  font-family: "fontAwesome";
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.liber-institute a:hover:after {
+  color: #ffa500;
+}
+
 /* banner styling ends  */
 /* mission section start  */
 
@@ -576,7 +593,7 @@ header img {
   border: 1px solid;
 }
 
-.brain-text h3{
+.brain-text h4{
   font-size: 210px;
 }
 
@@ -638,25 +655,51 @@ header img {
   flex-basis: 63.6%;
 }
 
-.event-title h3 {
+.event-title h5 {
   color: #DE244D;
   font-size: 34px;
   font-weight: bold;
 }
 
-.event-title h4 {
-  margin-top: 46px;
-  font-size: 31px;
+.event-title h5 a {
+  text-indent: -9999px;
+}
+
+.event-title h5 a::before{
+  content: "\f133 ";
+  margin-right: 27px;
+  float: right;
+  color: #ff0000;
+  font-family: "fontAwesome";
+  font-size: 40px;
+  text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+
+}
+
+.event-title h5 a:hover:before {
+  color: #ffa500;
+}
+
+.event-title h6 {
+  margin-top: 38px;
+  color: #765572;
+  font-size: 38px;
   font-weight: bold;
 }
 
 .event-title p {
-  margin-top: 18px;
+  margin-top: 12px;
   font-size: 23px;
+  line-height: 38px;
 }
 
 .event-info {
-  padding: 4.6% 10.1%;
+  padding: 7.7% 10.5% 1.2% 9.5%;
   margin-top: 78px;
   background-color: #71BACB;
 }
@@ -722,7 +765,7 @@ header img {
 }
 
 .footer-icons li {
-  padding: 13px 0;
+  padding: 17px 0;
   flex-basis: 25%;
   background-color: #5670A9;
   text-align: center;
@@ -737,7 +780,7 @@ header img {
 }
 
 .footer-icons li:nth-child(4) {
-  padding: 19px;
+  padding: 21px 0;
   background-color: #E31E53;
 }
 
@@ -755,6 +798,8 @@ header img {
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   text-indent: 0;
   text-transform: uppercase;
   white-space: nowrap;
@@ -769,7 +814,7 @@ header img {
   float: right;
   color: #DCDCDC;
   font-family: "fontAwesome";
-  font-size: 37px;
+  font-size: 34px;
   text-indent: 0;
   -webkit-transition: all ease-in-out 0.5s;
   -ms-transition: all ease-in-out 0.5s;
@@ -802,7 +847,7 @@ header img {
 
 
 .footer-info {
-  padding: 54px 0;
+  padding: 55px 0;
   text-align: center;
 }
 
@@ -847,7 +892,7 @@ header img {
     right: 0;
   }
 
-  .brain-text h3 {
+  .brain-text h4 {
     font-size: 92px;
   }
 
@@ -918,7 +963,7 @@ header img {
     align-self: flex-start;
   }
 
-  .brain-text h3 {
+  .brain-text h4 {
     font-size: 47px;
   }
 
@@ -972,7 +1017,7 @@ header img {
   height: 163px;
  }
 
- .brain-text h3 {
+ .brain-text h4 {
   font-size: 33px;
 }
 
