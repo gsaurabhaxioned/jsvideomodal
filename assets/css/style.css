@@ -161,6 +161,11 @@ header img {
   color: #000;
   font-size: 19px;
   font-weight: bold;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 .menus ul li a:hover {
@@ -224,14 +229,46 @@ header img {
 
 .action-buttons li a {
   color: #fff;
-  font-size: 18px;
+  font-size: 19px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  white-space: nowrap;
 }
 
 .action-buttons li:nth-child(2) a {
-  padding: 1px;
+  padding: 1px 19px;
   font-size: 15px;
 }
 
+.action-buttons li a:hover {
+  color: #ffa500;
+}
+
+.search {
+  text-indent: -9999px;
+}
+
+.search::before {
+  content: "\f002";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.search:hover:before {
+  color: #ffa500;
+}
 
 
 
@@ -285,7 +322,15 @@ header img {
   font-size: 16px;
   font-weight: bold;
   box-sizing: border-box;
- 
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.liber-institute a:hover {
+  color: #ffa500;
 }
 
 /* banner styling ends  */
@@ -415,6 +460,15 @@ header img {
   color: #fff;
   font-family: "fontAwesome";
   text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.content a:hover:before {
+  color: #ffa500;
 }
 
 
@@ -444,6 +498,15 @@ header img {
   font-family: "fontAwesome";
   font-size: 100px;
   text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.content-icon a:hover:before {
+  color: #ffa500;
 }
 
 /* our content end  */
@@ -492,22 +555,36 @@ header img {
   color: #CF1B40;
 }
 
+.see-what {
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.see-what:hover {
+  color: #ffa500;
+}
+
 .see-what::after {
   content: "\f18e";
   margin-left: 13px;
   vertical-align: middle;
   font-size: 23px;
   font-family: "fontAwesome";
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+
+.see-what:hover:after {
+  color: #ffa000;
 }
   
-  .content-icon a::before{
-    content: "\f254";
-    float: right;
-    color: #E2BFDD;
-    font-family: "fontAwesome";
-    font-size: 100px;
-    text-indent: 0;
-  }
 
 /* brain section end  */
 /* upcoming events start  */
@@ -576,6 +653,15 @@ header img {
   font-family: "fontAwesome";
   font-size: 39px;
   text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.event-info a:hover::before {
+  color: #ffa000;
 }
 
 /* upcoming events end  */
@@ -617,6 +703,11 @@ header img {
 
 .footer-icons li a {
   text-indent: -9999px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 .footer-icons li:nth-child(4) a {
@@ -628,8 +719,8 @@ header img {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.footer-icons li a:hover {
-  color: #ff0000;
+.footer-icons li a:hover,.footer-icons li a:hover::before {
+  color: #ffa000;
 }
 
 
@@ -640,10 +731,18 @@ header img {
   font-family: "fontAwesome";
   font-size: 37px;
   text-indent: 0;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.footer-icons li a:hover::before {
+  color: #ffa000;
 }
 
 .footer-icons li a:hover:before {
-  color: red;
+  color: #ffa500;
 }
 
 .footer-icons li:nth-child(2) a:before {
@@ -721,6 +820,10 @@ header img {
     .content {
       width: 100%;
     }
+
+    .liber-institute {
+      top: 0;
+    }
 }
 
 /*media query for 995px starts here*/
@@ -777,6 +880,10 @@ header img {
 
   .brain-text h3 {
     font-size: 47px;
+  }
+
+  .play-button {
+    left: 47%;
   }
 
 }  
@@ -843,5 +950,8 @@ header img {
     height: 371px;
   }
 
+  .play-button {
+    left: 44%;
+  }
 
 }
