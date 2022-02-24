@@ -355,7 +355,8 @@ header img {
 .close-video {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 17%;
+  z-index: 3;
   display: none;
   text-indent: -9999px;
 }
@@ -432,7 +433,7 @@ header img {
   margin-right: 13.2%;
 }
 
-.content-icon a{
+.content-icon a {
   text-indent: -9999px;
 }
 
@@ -462,6 +463,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 37px;
   color: #fff;
 }
 
@@ -624,6 +626,7 @@ header img {
   color: #fff;
   text-indent: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .footer-icons li a:hover {
   color: #ff0000;
@@ -685,24 +688,149 @@ header img {
 =================================*/ 
 
 /*media query starts*/
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1440px) {
+
+  .menus ul li a {
+    font-size: 12px;
+  }
+
+  .liber-institute h2 {
+    font-size: 31px;
+  }
+
+  .content-icon a::before {
+    font-size: 48px;
+  }
+
+  .content-icon {
+    top: 0;
+    right: 0;
+  }
+
+  .brain-text h3 {
+    font-size: 92px;
+  }
+
+  /* .brain-content  */
+
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+    .content {
+      width: 100%;
+    }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
   header .wrapper,.mission-title .wrapper,.our-contents .wrapper,.upcoming-events .wrapper {
     flex-direction: column;
+    align-items: center;
     row-gap: 20px;
   }
 
   .content {
+    width: 80%;
     margin-right: 0;
   }
 
-  .liber-institute,.content-icon,.brain-content {
-    display: none;
+  .mission-title .wrapper figure {
+    margin: 0;
   }
 
-  .footer-icons li:nth-child(4) a:before {
+  .action-buttons {
+    align-items: center;
+  }
+
+  .action-buttons li:nth-child(1) {
+    padding: 19px 53px;
+  }
+
+  .action-buttons li:nth-child(2) {
+    background: #526069;
+    padding: 19px 10px;
+  }
+
+  .action-buttons li a {
+    font-size: 17px;
+  }
+
+  .liber-institute h2 {
+    font-size: 20px;
+  }
+
+  .liber-institute p {
+    font-size: 18px;
+  }
+
+  .liber-institute a {
+    padding: 15px 104px;
     font-size: 12px;
   }
 
+  .brain-image {
+    align-self: flex-start;
+  }
+
+  .brain-text h3 {
+    font-size: 47px;
+  }
+
 }  
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+
+  .menus {
+    padding: 20px;
+    background-color: #794F73;
+  }
+
+ .menus ul {
+   flex-direction: column;
+ }
+
+ .menus ul li a {
+  color: #fff;
+ }
+
+ .menus ul li a:hover {
+   color: #fff;
+ }
+
+ .banner figure {
+   height: 412px;
+ }
+
+ .content {
+   width: 75%;
+ }
+
+ .brain-content {
+  top: 7px;
+ }
+
+ .brain-image figure {
+  width: 163px;
+  height: 163px;
+ }
+
+ .brain-text h3 {
+  font-size: 33px;
+}
+
+  .brain-text p {
+    margin-top: 17px;
+    font-size: 17px;
+  }
+
+  .brain-text a {
+    margin-top: 32px;
+    padding: 9px 25px;
+  }
+
+
+}
