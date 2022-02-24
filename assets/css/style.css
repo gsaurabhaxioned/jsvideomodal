@@ -326,7 +326,27 @@ header img {
 }
 
 /* our content end  */
+/* brain section start  */
 
+.brains .wrapper {
+  width: 70%;
+}
+
+.brain-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brain-image figure {
+  width: 268px;
+  height: 230px;
+}
+
+.brain-text h3{
+  font-size: 210px;
+}
+/* brain section end  */
 
 
 
