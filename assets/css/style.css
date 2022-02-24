@@ -352,6 +352,24 @@ header img {
   cursor: pointer;
 }
 
+.close-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
+}
+
+.close-video::before {
+  content: "\f00d";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  font-size: 72px;
+  text-indent: 0;
+  cursor: pointer;
+}
+
+
 /* mission section end  */
 /* our content start  */
 
