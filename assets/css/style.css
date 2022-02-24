@@ -108,10 +108,14 @@ li {
   Header styling starts here
 =================================*/
  header .wrapper {
-  width: 96.3%;
+  width: 100%;
   padding: 34px 0;
   display: flex;
   align-items: center;
+ }
+
+ header h1 {
+   margin-left: 1.8%;
  }
 
 header img {
@@ -139,7 +143,8 @@ header img {
 }
 
 .menus {
- width: 100%;
+  width: 65.3%;
+  padding-right: 42px;
 }
 
 .menus ul {
@@ -164,7 +169,7 @@ header img {
 }
 
 .menus ul li:first-child {
-  margin-left: 3.4%;
+  margin-left: 4.3%;
 }
 
 .menus ul li:first-child a {
@@ -172,13 +177,13 @@ header img {
 }
 
 .menus ul li:nth-child(2) {
-  margin-left: 4.9%;
-  flex-basis: 11%;
+  margin-left: 3.5%;
+  flex-basis: 14%;
 }
 
+
 .menus ul li:nth-child(3) {
-  margin-left: 1.7%;
-  flex-basis: 12%;
+  flex-basis: 15%;
 }
 
  .menus ul li:nth-child(4) {
@@ -202,6 +207,30 @@ header img {
   flex-basis: 5.4%;
   text-align: center;
 } 
+
+.action-buttons li:nth-child(1) {
+  text-align: center;
+  background: #794F73;
+  padding: 46px 53px;
+}
+
+.action-buttons li:nth-child(2) {
+  background: #526069;
+  padding: 47px 10px;
+}
+
+.action-buttons li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.action-buttons li:nth-child(2) a {
+  padding: 1px;
+  font-size: 15px;
+}
+
+
+
 
 /*=================================
   Header styling ends here
@@ -303,6 +332,19 @@ header img {
   background: #794F73;
 }
 
+.content a {
+  font-size: 35px;
+  text-indent: -9999px;
+}
+
+.content a::before {
+  content: "\f18e";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
 .content h3 {
   width: 87%;
   color: #fff;
@@ -323,6 +365,18 @@ header img {
 
 .mission-content,.drug-content {
   margin-right: 13.2%;
+}
+
+.content-icon {
+  text-indent: -9999px;
+}
+
+.content-icon {
+  content: "\f254";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  text-indent: 0;
 }
 
 /* our content end  */
