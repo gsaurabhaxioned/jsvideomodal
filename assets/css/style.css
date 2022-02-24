@@ -54,6 +54,7 @@ em { font-style: italic; }
 
 img {
   width: 100%;
+  height: 100%;
   border: 0;
   vertical-align: middle;
 }
@@ -99,18 +100,108 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1519px;
+  width: 97%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+ header .wrapper {
+  width: 96.3%;
+  padding: 34px 0;
+  display: flex;
+  align-items: center;
+ }
 
+header img {
+  width: 161px;
+  height: 42px;
+}
+ 
+.hamburger,
+.cross {
+  display: none;
+  text-indent: -9999px; 
+}
 
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
 
+.cross::before {
+  content: "\f00d";
+}
 
+.menus {
+ width: 100%;
+}
 
+.menus ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus ul li {
+  color: #000;
+  font-size: 21px;
+}
+
+.menus ul li a {
+  color: #000;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.menus ul li a:hover {
+  color: #ffa500;
+}
+
+.menus ul li:first-child {
+  margin-left: 3.4%;
+}
+
+.menus ul li:first-child a {
+  white-space: nowrap;
+}
+
+.menus ul li:nth-child(2) {
+  margin-left: 4.9%;
+  flex-basis: 11%;
+}
+
+.menus ul li:nth-child(3) {
+  margin-left: 1.7%;
+  flex-basis: 12%;
+}
+
+ .menus ul li:nth-child(4) {
+  margin-left: 0.1%;
+  flex-basis: 11%;
+}
+
+ .menus ul li:nth-child(5) {
+  margin-left: 1.4%;
+} 
+
+ .menus ul li:nth-child(6) {
+  background: #794F73;
+  flex-basis: 17.4%;
+  text-align: center;
+  margin-right: 0;
+} 
+
+ .menus ul li:nth-child(7) {
+  background: gray;
+  flex-basis: 5.4%;
+  text-align: center;
+} 
 
 /*=================================
   Header styling ends here
@@ -120,9 +211,121 @@ li {
   main styling starts here
 =================================*/
 
+/* banner styling starts  */
 
+.banner {
+  position: relative;
+}
 
+.liber-institute {
+  width: 100%;
+  padding: 35px 0;
+  position: absolute;
+  top: 47%;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+}
 
+.liber-institute .wrapper {
+ text-align: center;
+}
+
+.liber-institute h2 {
+  width: 33%;
+  margin: auto;
+  font-size: 42px;
+  line-height: 59px;
+  letter-spacing: 1px;
+}
+
+.liber-institute p {
+  margin-top: 7px;
+  font-size: 26px;
+}
+
+.liber-institute a {
+  padding: 20px 104px;
+  margin-top: 25px;
+  border: 5px solid #fff;
+  border-radius: 36px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+ 
+}
+
+/* banner styling ends  */
+/* mission section start  */
+
+.mission-title .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mission-title figure {
+  margin-left: 27.7%;
+}
+
+.mission-title h3 {
+  margin-left: 32px;
+  font-size: 32px;
+}
+
+.video {
+  margin-top: 83px;
+}
+
+.video .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video figure {
+  width: 991px;
+  height: 559px;
+}
+
+/* mission section end  */
+/* our content start  */
+
+.our-contents .wrapper {
+  padding: 114px 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 53px;
+}
+
+.content {
+  padding: 113px 59px;
+  flex-basis: 31.7%;
+  background: #794F73;
+}
+
+.content h3 {
+  width: 87%;
+  color: #fff;
+  font-size: 50px;
+}
+
+.content p {
+  width: 77%;
+  margin-top: 9px;
+  font-size: 28px;
+  color: #D3A9D1;
+  line-height: 40px;
+}
+
+.content a {
+  margin-top: 7px;
+}
+
+.mission-content,.drug-content {
+  margin-right: 13.2%;
+}
+
+/* our content end  */
 
 
 
