@@ -328,26 +328,109 @@ header img {
 /* our content end  */
 /* brain section start  */
 
+.brains {
+  position: relative;
+}
+
 .brains .wrapper {
   width: 70%;
 }
 
 .brain-content {
+  position: absolute;
+  top: 79px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .brain-image figure {
   width: 268px;
   height: 230px;
+  border: 1px solid;
 }
 
 .brain-text h3{
   font-size: 210px;
 }
-/* brain section end  */
 
+.brain-text p {
+  width: 88%;
+  margin-top: 17px;
+  font-size: 29px;
+  line-height: 37px;
+}
+
+.brain-text a {
+  margin-top: 45px;
+    padding: 25px 36px;
+    border: 1px solid rgb(0,0,0,0.3);
+    background: #fff;
+    color: #CF1B40;
+}
+/* brain section end  */
+/* upcoming events start  */
+.upcoming-events .wrapper {
+  padding: 91px 0 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-title {
+  flex-basis: 63.6%;
+}
+
+.event-title h3 {
+  color: #DE244D;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.event-title h4 {
+  margin-top: 46px;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.event-title p {
+  margin-top: 18px;
+  font-size: 23px;
+}
+
+.event-info {
+  padding: 5.3% 10.1%;
+  margin-top: 78px;
+  background-color: #71BACB;
+}
+
+.event-info span {
+  display: block;
+  font-size: 78px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.event-info span:nth-child(2) {
+  margin-top: 10px;
+  display: block;
+  color: #fff;
+  font-size: 23px;
+}
+
+.event-info span:nth-child(3) {
+  margin-top: 2px;
+  color: #fff;
+  font-size: 23px;
+}
+
+.event-info a {
+  margin-top: 11px;
+}
+
+
+
+/* upcoming events end  */
 
 
 /*=================================
@@ -358,10 +441,50 @@ header img {
   footer styling starts here
 =================================*/ 
 
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.footer-icons li {
+  padding: 14px 0;
+  flex-basis: 25%;
+  background-color: #5670A9;
+  text-align: center;
+}
 
+.footer-icons li:nth-child(2) {
+  background-color: #4BB8F0;
+}
 
+.footer-icons li:nth-child(3) {
+  background-color: #3377B4;
+}
 
+.footer-icons li:nth-child(4) {
+  background-color: #E31E53;
+}
+
+.footer-info {
+  padding: 54px 0;
+  text-align: center;
+}
+
+.footer-info figure {
+  width: 145px;
+  height: 86px;
+  margin: auto;
+}
+
+.footer-info address {
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.footer-info p {
+  line-height: 26px;
+}
 
 
  /*=================================
