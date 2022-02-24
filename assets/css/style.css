@@ -323,7 +323,7 @@ header img {
 }
 
 .play-video {
-  width: 991px;
+  width: 67%;
   height: 559px;
   position: absolute;
   z-index: 1;
@@ -356,19 +356,19 @@ header img {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
   text-indent: -9999px;
 }
 
 .close-video::before {
   content: "\f00d";
   float: right;
-  color: #000;
+  color: #ff0000;
   font-family: "fontAwesome";
-  font-size: 72px;
+  font-size: 58px;
   text-indent: 0;
   cursor: pointer;
 }
-
 
 /* mission section end  */
 /* our content start  */
