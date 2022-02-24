@@ -109,7 +109,6 @@ li {
 =================================*/
  header .wrapper {
   width: 100%;
-  padding: 34px 0;
   display: flex;
   align-items: center;
  }
@@ -208,6 +207,10 @@ header img {
   text-align: center;
 } 
 
+.action-buttons {
+  display: flex;
+}
+
 .action-buttons li:nth-child(1) {
   text-align: center;
   background: #794F73;
@@ -216,7 +219,7 @@ header img {
 
 .action-buttons li:nth-child(2) {
   background: #526069;
-  padding: 47px 10px;
+  padding: 46px 10px;
 }
 
 .action-buttons li a {
@@ -250,7 +253,7 @@ header img {
   width: 100%;
   padding: 35px 0;
   position: absolute;
-  top: 47%;
+  bottom: 0;
   left: 0;
   background: rgba(0,0,0,0.4);
   color: #fff;
@@ -327,23 +330,12 @@ header img {
 }
 
 .content {
-  padding: 113px 59px;
+  padding: 104px 59px 105px;
+  position: relative;
   flex-basis: 31.7%;
   background: #794F73;
 }
 
-.content a {
-  font-size: 35px;
-  text-indent: -9999px;
-}
-
-.content a::before {
-  content: "\f18e";
-  float: right;
-  color: #fff;
-  font-family: "fontAwesome";
-  text-indent: 0;
-}
 
 .content h3 {
   width: 87%;
@@ -361,21 +353,44 @@ header img {
 
 .content a {
   margin-top: 7px;
+  font-size: 35px;
+  text-indent: -9999px;
+}
+
+.content a::before {
+  content: "\f18e";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+
+.content-icon {
+  padding: 8% 9.5%;
+  border: 4px solid #794F73;
+  border-radius: 100%;
+  position: absolute;
+  top: 23.9%;
+  right: -17.6%;
+  display: inline-block;
+  background-color: #fff;
 }
 
 .mission-content,.drug-content {
   margin-right: 13.2%;
 }
 
-.content-icon {
+.content-icon a{
   text-indent: -9999px;
 }
 
-.content-icon {
+.content-icon a::before{
   content: "\f254";
   float: right;
-  color: #fff;
+  color: #E2BFDD;
   font-family: "fontAwesome";
+  font-size: 100px;
   text-indent: 0;
 }
 
@@ -418,11 +433,29 @@ header img {
 
 .brain-text a {
   margin-top: 45px;
-    padding: 25px 36px;
-    border: 1px solid rgb(0,0,0,0.3);
-    background: #fff;
-    color: #CF1B40;
+  padding: 25px 36px;
+  border: 1px solid rgb(0,0,0,0.3);
+  background: #fff;
+  color: #CF1B40;
 }
+
+.see-what::after {
+  content: "\f18e";
+  margin-left: 13px;
+  vertical-align: middle;
+  font-size: 23px;
+  font-family: "fontAwesome";
+}
+  
+  .content-icon a::before{
+    content: "\f254";
+    float: right;
+    color: #E2BFDD;
+    font-family: "fontAwesome";
+    font-size: 100px;
+    text-indent: 0;
+  }
+
 /* brain section end  */
 /* upcoming events start  */
 .upcoming-events .wrapper {
@@ -453,7 +486,7 @@ header img {
 }
 
 .event-info {
-  padding: 5.3% 10.1%;
+  padding: 4.6% 10.1%;
   margin-top: 78px;
   background-color: #71BACB;
 }
@@ -480,9 +513,17 @@ header img {
 
 .event-info a {
   margin-top: 11px;
+  text-indent: -9999px;
 }
 
-
+.event-info a::before {
+  content: "\f18e";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 39px;
+  text-indent: 0;
+}
 
 /* upcoming events end  */
 
@@ -502,7 +543,7 @@ header img {
 }
 
 .footer-icons li {
-  padding: 14px 0;
+  padding: 13px 0;
   flex-basis: 25%;
   background-color: #5670A9;
   text-align: center;
@@ -517,8 +558,55 @@ header img {
 }
 
 .footer-icons li:nth-child(4) {
+  padding: 19px;
   background-color: #E31E53;
 }
+
+.footer-icons li a {
+  text-indent: -9999px;
+}
+
+.footer-icons li:nth-child(4) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-indent: 0;
+  text-transform: uppercase;
+}
+.footer-icons li a:hover {
+  color: #ff0000;
+}
+
+
+.footer-icons li a::before {
+  content: "\f09a";
+  float: right;
+  color: #DCDCDC;
+  font-family: "fontAwesome";
+  font-size: 37px;
+  text-indent: 0;
+}
+
+.footer-icons li a:hover:before {
+  color: red;
+}
+
+.footer-icons li:nth-child(2) a:before {
+  content: "\f099";
+}
+
+.footer-icons li:nth-child(3) a:before {
+  content: "\f16d";
+}
+
+.footer-icons li:nth-child(4) a:before {
+  content: "\f0e0   \f061";
+  margin-right: 7px;
+  float: left;
+  font-size: 25px;
+}
+
 
 .footer-info {
   padding: 54px 0;
@@ -549,6 +637,21 @@ header img {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+  header .wrapper,.mission-title .wrapper,.our-contents .wrapper,.upcoming-events .wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 
+  .content {
+    margin-right: 0;
+  }
+
+  .liber-institute,.content-icon,.brain-content {
+    display: none;
+  }
+
+  .footer-icons li:nth-child(4) a:before {
+    font-size: 12px;
+  }
 
 }  
