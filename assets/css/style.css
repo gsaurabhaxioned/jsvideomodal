@@ -955,7 +955,7 @@ footer {
 }
 
 .footer-icons li:nth-child(4) a:before {
-  content: "\f0e0       \f061";
+  content: "\f0e0    \f061";
   margin-right: 7px;
   float: left;
   font-size: 25px;
