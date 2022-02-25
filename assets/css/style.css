@@ -206,7 +206,7 @@ header img {
 }
 
 .action-buttons li:nth-child(1) {
-  padding: 44px 51px;
+  padding: 44px 52px;
   background: #794F73;
   text-align: center;
 }
@@ -611,10 +611,11 @@ header img {
 
 .brain-text a {
   margin-top: 45px;
-  padding: 25px 36px;
+  padding: 26px 40px;
   border: 1px solid rgb(0,0,0,0.3);
   background: #fff;
   color: #CF1B40;
+  font-size: 17px;
 }
 
 .see-what {
@@ -763,6 +764,11 @@ header img {
   footer styling starts here
 =================================*/ 
 
+footer {
+  background-color: #526069;
+  color: #ACB6B7;
+}
+
 .footer-icons {
   display: flex;
   justify-content: space-between;
@@ -801,7 +807,7 @@ header img {
 .footer-icons li:nth-child(4) a {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -921,6 +927,7 @@ header img {
 
   header .wrapper,.mission-title .wrapper,.our-contents .wrapper,.upcoming-events .wrapper {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     row-gap: 20px;
   }
@@ -1042,6 +1049,10 @@ header img {
 
   .play-button {
     left: 44%;
+  }
+
+  .footer-icons li:nth-child(4) a {
+    font-size: 13px;
   }
 
 }
