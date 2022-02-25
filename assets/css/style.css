@@ -206,14 +206,14 @@ header img {
 }
 
 .action-buttons li:nth-child(1) {
-  padding: 45px 51px;
+  padding: 44px 51px;
   background: #794F73;
   text-align: center;
 }
 
 .action-buttons li:nth-child(2) {
   background: #526069;
-  padding: 46px 7px;
+  padding: 45px 7px;
 }
 
 .action-buttons li a {
@@ -301,7 +301,7 @@ header img {
 }
 
 .liber-institute a {
-  padding: 20px 104px;
+  padding: 18px 81px;
   margin-top: 29px;
   border: 5px solid #fff;
   border-radius: 36px;
@@ -446,19 +446,20 @@ header img {
   width: 87%;
   color: #fff;
   font-size: 50px;
+  line-height: 54px;
 }
 
 .content p {
   width: 77%;
-  margin-top: 9px;
+  margin-top: 5px;
   font-size: 28px;
-  color: #D3A9D1;
-  line-height: 40px;
+  color: #DDB4E0;
+  line-height: 39px;
 }
 
 .content a {
   margin-top: 7px;
-  font-size: 35px;
+  font-size: 39px;
   text-indent: -9999px;
 }
 
@@ -521,6 +522,10 @@ header img {
   color: #E7A9B3;
 }
 
+.content:nth-child(3) p {
+  color: #92A3AF
+}
+
 .content:nth-child(4) p {
   color: #790316;
 }
@@ -558,11 +563,11 @@ header img {
 }
 
 .content:nth-child(3) {
-  padding-top: 71px;
+  padding: 75px 59px 67px;
 }
 
 .content:nth-child(4) {
-  padding-top: 83px;
+  padding: 89px 59px 0;
 }
 
 
