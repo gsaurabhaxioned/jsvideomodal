@@ -157,6 +157,7 @@ header img {
 }
 
 .menus ul li {
+  margin-bottom: 2px;
   color: #000;
   font-size: 21px;
 }
